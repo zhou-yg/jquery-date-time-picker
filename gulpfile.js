@@ -25,10 +25,12 @@ gulp.task('build',['clean'],()=>{
     .pipe(gulp.dest('./dist/'));
 
   gulp.src([
+    path.resolve(__dirname,'./src/amdBegine.js'),
     path.resolve(__dirname,'./lib/jquery-ui.js'),
     path.resolve(__dirname,'./src/jquery-ui-timepicker-addon.js'),
     path.resolve(__dirname,'./src/i18n/jquery-ui-timepicker-zh-CN.js'),
     path.resolve(__dirname,'./src/i18n/datepicker-zh-CN.js'),
+    path.resolve(__dirname,'./src/amdEnd.js'),
   ]).pipe(concat('jquery-date-time-picker.js'))
     .pipe(gulp.dest('./dist/'));
 
@@ -44,10 +46,12 @@ gulp.task('product',()=>{
     .pipe(gulp.dest('./dist/'));
 
   gulp.src([
+    path.resolve(__dirname,'./src/amdBegine.js'),
     path.resolve(__dirname,'./lib/jquery-ui.js'),
     path.resolve(__dirname,'./src/jquery-ui-timepicker-addon.js'),
     path.resolve(__dirname,'./src/i18n/jquery-ui-timepicker-zh-CN.js'),
     path.resolve(__dirname,'./src/i18n/datepicker-zh-CN.js'),
+    path.resolve(__dirname,'./src/amdEnd.js'),
   ]).pipe(concat('jquery-date-time-picker.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./dist/'));

@@ -1,18 +1,30 @@
+(function (factory) {
+  if (typeof define === 'function' && define.amd) {
+  	define(['jquery'], factory);
+  } else {
+  	factory(jQuery);
+  }
+}(function (jQuery) {
+
+
+
+
 /*! jQuery UI - v1.11.4 - 2016-05-11
 * http://jqueryui.com
 * Includes: core.js, widget.js, mouse.js, position.js, datepicker.js, slider.js
 * Copyright jQuery Foundation and other contributors; Licensed MIT */
 
 (function( factory ) {
-	if ( typeof define === "function" && define.amd ) {
-
-		// AMD. Register as an anonymous module.
-		define([ "jquery" ], factory );
-	} else {
-
-		// Browser globals
-		factory( jQuery );
-	}
+	//if ( typeof define === "function" && define.amd ) {
+  //
+	//	// AMD. Register as an anonymous module.
+	//	define([ "jquery" ], factory );
+	//} else {
+  //
+	//	// Browser globals
+	//	factory( jQuery );
+	//}
+	factory( jQuery );
 }(function( $ ) {
 /*!
  * jQuery UI Core 1.11.4
@@ -4329,11 +4341,12 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
  */
 
 (function (factory) {
-	if (typeof define === 'function' && define.amd) {
-		define(['jquery', 'jquery-ui'], factory);
-	} else {
-		factory(jQuery);
-	}
+	//if (typeof define === 'function' && define.amd) {
+	//	define(['jquery', 'jquery-ui'], factory);
+	//} else {
+	//	factory(jQuery);
+	//}
+	factory(jQuery);
 }(function ($) {
 
 	/*
@@ -6643,15 +6656,16 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
 /* Chinese initialisation for the jQuery UI date picker plugin. */
 /* Written by Cloudream (cloudream@gmail.com). */
 (function (factory) {
-  if (typeof define === "function" && define.amd) {
-
-    // AMD. Register as an anonymous module.
-    define(["../datepicker"], factory);
-  } else {
-
-    // Browser globals
-    factory(jQuery.datepicker);
-  }
+  //if (typeof define === "function" && define.amd) {
+  //
+  //  // AMD. Register as an anonymous module.
+  //  define(["../datepicker"], factory);
+  //} else {
+  //
+  //  // Browser globals
+  //  factory(jQuery.datepicker);
+  //}
+  factory(jQuery.datepicker);
 }(function (datepicker) {
 
   datepicker.regional['zh-CN'] = {
@@ -6676,5 +6690,8 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
   datepicker.setDefaults(datepicker.regional['zh-CN']);
 
   return datepicker.regional['zh-CN'];
+
+}));
+
 
 }));
