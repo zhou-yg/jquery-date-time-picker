@@ -22,14 +22,32 @@ gulp.task('build',['clean'],()=>{
     path.resolve(__dirname,'./src/jquery-ui-timepicker-addon.css'),
     path.resolve(__dirname,'./src/jquery-ui-timepicker-addon-cover.css'),
   ]).pipe(concat('jquery-date-time-picker.css'))
+    .pipe(gulp.dest('./dist/'));
+
+  gulp.src([
+    path.resolve(__dirname,'./lib/jquery-ui.js'),
+    path.resolve(__dirname,'./src/jquery-ui-timepicker-addon.js'),
+    path.resolve(__dirname,'./src/i18n/jquery-ui-timepicker-zh-CN.js'),
+    path.resolve(__dirname,'./src/i18n/datepicker-zh-CN.js'),
+  ]).pipe(concat('jquery-date-time-picker.js'))
+    .pipe(gulp.dest('./dist/'));
+
+});
+
+gulp.task('product',()=>{
+  gulp.src([
+    path.resolve(__dirname,'./lib/jquery-ui.css'),
+    path.resolve(__dirname,'./src/jquery-ui-timepicker-addon.css'),
+    path.resolve(__dirname,'./src/jquery-ui-timepicker-addon-cover.css'),
+  ]).pipe(concat('jquery-date-time-picker.css'))
     .pipe(minifyCss())
     .pipe(gulp.dest('./dist/'));
 
   gulp.src([
     path.resolve(__dirname,'./lib/jquery-ui.js'),
     path.resolve(__dirname,'./src/jquery-ui-timepicker-addon.js'),
-    path.resolve(__dirname,'./src/i18n/datepicker-zh-CN.js'),
     path.resolve(__dirname,'./src/i18n/jquery-ui-timepicker-zh-CN.js'),
+    path.resolve(__dirname,'./src/i18n/datepicker-zh-CN.js'),
   ]).pipe(concat('jquery-date-time-picker.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./dist/'));
