@@ -1,0 +1,18 @@
+.ui-datepicker{
+
+}
+.ui-icon-circle-triangle-w,.ui-icon-circle-triangle-e{
+    font-size: 0;
+}
+.ui-icon-circle-triangle-w:before{
+    content: '';
+    border: 8px solid;
+    border-color: transparent #999999 transparent transparent;
+    display: block;
+}
+.ui-icon-circle-triangle-e:before{
+    content: '';
+    border: 8px solid;
+    border-color: transparent transparent transparent #999999;
+    display: block;
+}

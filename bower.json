@@ -1,0 +1,22 @@
+{
+  "name": "jquery-date-time-picker",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zhou-yg/jquery-date-time-picker"
+  },
+  "main": ["dist/jquery-date-time-picker.js", "dist/jquery-date-time-picker.css"],
+  "ignore": [
+    "/CONTRIBUTING.md",
+    "/Gruntfile.js",
+    "/README.md",
+    "/composer.json",
+    "/jquery-ui-timepicker-addon.json",
+    "/lib",
+    "/package.json",
+    "/src",
+    "/test"
+  ],
+  "dependencies": {
+    "jquery":"x.x.x"
+  }
+}

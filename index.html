@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/lib/jquery-ui.css" />
+    <link rel="stylesheet" href="/src/jquery-ui-timepicker-addon.css" />
+    <link rel="stylesheet" href="/src/jquery-ui-timepicker-addon-cover.css" />
+</head>
+<body>
+<input type="text" width="100"/>
+
+<div id="hello">
+</div>
+
+</body>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/lib/jquery-ui.js"></script>
+<script src="/src/jquery-ui-timepicker-addon.js"></script>
+<script src="/src/i18n/datepicker-zh-CN.js"> </script>
+<script src="/src/i18n/jquery-ui-timepicker-zh-CN.js"></script>
+<script>
+    $('input').datetimepicker({
+        showOtherMonths:true,
+        selectOtherMonths:true,
+        timeFormat: 'HH:mm:ss',
+        stepHour: 1,
+        stepMinute: 10,
+        stepSecond: 10
+    });
+</script>
+
+</html>
