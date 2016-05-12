@@ -102,6 +102,8 @@
     height: 18px;
     outline: none;
     top: 0;
+
+    cursor: pointer;
 }
 .ui-timepicker-div .ui_tpicker_hour .ui-widget-content .ui-slider-handle:before,
 .ui-timepicker-div .ui_tpicker_minute .ui-widget-content .ui-slider-handle:before ,
