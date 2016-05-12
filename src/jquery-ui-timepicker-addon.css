@@ -47,10 +47,12 @@
 .ui-timepicker-div .ui_tpicker_time_selected .ui_tpicker_time_label{
     float: none;
     display: inline-block;
+    vertical-align: middle;
 }
 .ui-timepicker-div .ui_tpicker_time_selected .ui_tpicker_time{
     margin: 0 0 0 10px;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .ui-timepicker-div .ui_tpicker_time .ui_tpicker_time_input {
