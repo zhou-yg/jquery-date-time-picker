@@ -90,6 +90,7 @@
 	width: 230px;
 	padding: 5px 15px;
 	display: none;
+	box-sizing: content-box;
 }
 .ui-datepicker .ui-datepicker-header {
 	position: relative;
