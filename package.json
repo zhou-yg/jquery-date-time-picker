@@ -1,6 +1,6 @@
 {
   "name": "jquery-date-time-picker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "beatiful jquery date picker plugin",
   "main": "index.js",
   "scripts": {

@@ -87,8 +87,9 @@
 	height: 100%;
 }
 .ui-datepicker {
-	width: 230px;
+	margin: 3px 0;
 	padding: 5px 15px;
+	width: 230px;
 	display: none;
 	box-sizing: content-box;
 }
@@ -797,10 +798,12 @@
 .ui-timepicker-div .ui_tpicker_time_selected .ui_tpicker_time_label{
     float: none;
     display: inline-block;
+    vertical-align: middle;
 }
 .ui-timepicker-div .ui_tpicker_time_selected .ui_tpicker_time{
     margin: 0 0 0 10px;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .ui-timepicker-div .ui_tpicker_time .ui_tpicker_time_input {
@@ -850,6 +853,8 @@
     height: 18px;
     outline: none;
     top: 0;
+
+    cursor: pointer;
 }
 .ui-timepicker-div .ui_tpicker_hour .ui-widget-content .ui-slider-handle:before,
 .ui-timepicker-div .ui_tpicker_minute .ui-widget-content .ui-slider-handle:before ,
