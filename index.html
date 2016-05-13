@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/src/jquery-ui-timepicker-addon-cover.css" />
 </head>
 <body>
-<input type="text" width="100"/>
+<input type="text" width="100" />
 
 <div id="hello">
 </div>
@@ -21,13 +21,16 @@
 <script src="/src/i18n/jquery-ui-timepicker-zh-CN.js"></script>
 <!--<script src="dist/jquery-date-time-picker.js"></script>-->
 <script>
+    //$('input').attr('readonly','readonly');
     $('input').datetimepicker({
         showOtherMonths:true,
         selectOtherMonths:true,
         timeFormat: 'HH:mm:ss',
-        stepHour: 1,
-        stepMinute: 10,
-        stepSecond: 10
+        constrainInput:false,
+        onSelect:function(e){
+            //$('input').datetimepicker('setDate', e);
+            console.log(e);
+        }
     });
     $('input').datetimepicker('show');
 </script>

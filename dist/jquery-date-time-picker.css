@@ -436,11 +436,19 @@
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
 	background: #17a6b3;
-	/*border: 2px solid #17a6b3;*/
 	border-radius: 50%;
 	font-weight: normal;
 	color: #ffffff;
 }
+
+/*.ui-widget-content .ui-datepicker-calendar .ui-state-active{*/
+	/*background: #17a6b3;*/
+	/*color: #ffffff;*/
+/*}*/
+/*.ui-widget-content .ui-datepicker-calendar .ui-state-active:before{*/
+	/*color: #ffffff;*/
+/*}*/
+
 .ui-state-active a,
 .ui-state-active a:link,
 .ui-state-active a:visited {
@@ -464,8 +472,17 @@
 	border: 0;
 	border-radius: 50%;
 	line-height: 24px;
+	/*color: #ffffff;*/
+	font-size: 0;
+	/*color: #dd0000;*/
+}
+.ui-datepicker-calendar .ui-state-highlight:before{
+	content: '今';
+	font-size: 14px;
+	/*color: #454545;*/
 	color: #dd0000;
 }
+
 
 .ui-state-highlight a,
 .ui-widget-content .ui-state-highlight a,
