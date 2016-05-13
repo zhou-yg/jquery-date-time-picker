@@ -998,15 +998,15 @@
     border-color: transparent #999999 transparent transparent;
     display: block;
 }
-.ui-icon-circle-triangle-w:after{
-    content: '';
-    border: 8px solid;
-    border-color: transparent #ffffff transparent transparent;
-    display: block;
-    position: relative;
-    top: -16px;
-    left: 2px;
-}
+/*.ui-icon-circle-triangle-w:after{*/
+    /*content: '';*/
+    /*border: 8px solid;*/
+    /*border-color: transparent #ffffff transparent transparent;*/
+    /*display: block;*/
+    /*position: relative;*/
+    /*top: -16px;*/
+    /*left: 2px;*/
+/*}*/
 
 .ui-icon-circle-triangle-e:before{
     content: '';
@@ -1014,12 +1014,12 @@
     border-color: transparent transparent transparent #999999;
     display: block;
 }
-.ui-icon-circle-triangle-e:after{
-    content: '';
-    border: 8px solid;
-    border-color: transparent transparent transparent #ffffff;
-    display: block;
-    position: relative;
-    top: -16px;
-    left: -2px;
-}
+/*.ui-icon-circle-triangle-e:after{*/
+    /*content: '';*/
+    /*border: 8px solid;*/
+    /*border-color: transparent transparent transparent #ffffff;*/
+    /*display: block;*/
+    /*position: relative;*/
+    /*top: -16px;*/
+    /*left: -2px;*/
+/*}*/
