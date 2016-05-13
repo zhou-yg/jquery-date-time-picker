@@ -91,6 +91,7 @@
 	width: 230px;
 	display: none;
 	box-sizing: content-box;
+	z-index: 99999 !important;
 }
 .ui-datepicker .ui-datepicker-header {
 	position: relative;
