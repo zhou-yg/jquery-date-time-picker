@@ -8,6 +8,7 @@ var concat = require('gulp-concat');
 var clean = require('gulp-clean');
 var minifyCss = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
+var rename = require('gulp-rename');
 
 var gulp = require('gulp');
 
@@ -22,6 +23,13 @@ gulp.task('build',['clean'],()=>{
     path.resolve(__dirname,'./src/jquery-ui-timepicker-addon.css'),
     path.resolve(__dirname,'./src/jquery-ui-timepicker-addon-cover.css'),
   ]).pipe(concat('jquery-date-time-picker.css'))
+    .pipe(gulp.dest('./dist/'));
+
+  gulp.src([
+    path.resolve(__dirname,'./lib/jquery-ui.css'),
+    path.resolve(__dirname,'./src/jquery-ui-timepicker-addon.css'),
+    path.resolve(__dirname,'./src/jquery-ui-timepicker-addon-cover.css'),
+  ]).pipe(concat('jquery-date-time-picker.scss'))
     .pipe(gulp.dest('./dist/'));
 
   gulp.src([
