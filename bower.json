@@ -4,7 +4,11 @@
     "type": "git",
     "url": "git://github.com/zhou-yg/jquery-date-time-picker"
   },
-  "main": ["dist/jquery-date-time-picker.js", "dist/jquery-date-time-picker.css"],
+  "main": [
+    "dist/jquery-date-time-picker.js",
+    "dist/jquery-date-time-picker.css",
+    "dist/jquery-date-time-picker.scss"
+  ],
   "ignore": [
     "/CONTRIBUTING.md",
     "/Gruntfile.js",
