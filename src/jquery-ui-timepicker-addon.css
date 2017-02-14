@@ -119,6 +119,7 @@
     position: absolute;
     right: 17px;
     top: 50%;
+    pointer-events: none;
 }
 /*.ui-timepicker-div .ui_tpicker_hour .ui-widget-content .ui-slider-handle:after,*/
 /*.ui-timepicker-div .ui_tpicker_minute .ui-widget-content .ui-slider-handle:after ,*/
