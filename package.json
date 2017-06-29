@@ -1,5 +1,5 @@
 {
-  "name": "jquery-date-time-picker",
+  "name": "@cnpm/jquery-date-time-picker",
   "version": "1.0.6",
   "description": "beatiful jquery date picker plugin",
   "main": "dist/jquery-date-time-picker.js",
